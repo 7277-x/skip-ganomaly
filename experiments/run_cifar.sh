@@ -6,6 +6,6 @@ declare -a arr=("airplane" "automobile" "bird" "cat" "deer" "dog" "frog" "horse"
 for i in "${arr[@]}";
 do
     echo "Running CIFAR. Anomaly Class: $i "
-    python train.py --dataset cifar10 --isize 32 --niter 25 --abnormal_class $i --model skipganomaly
+    python train.py --dataset cifar10 --isize 32 --niter 15 --abnormal_class $i --model skipganomaly
 done
 exit 0
